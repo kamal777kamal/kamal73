@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="D:\portfolio\portfolio.css">
+    <style>
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+        <div class="book">
+            <div class="profile-page">
+                <img src="D:\portfolio\kamal.jpeg" alt="" width="150px" height="150px">
+                <h1>Kamaleshwaran</h1>
+                <h3>Software Developer</h3>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+                <p>Hi, I am Kamaleshwaran, a Software Developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quos aut quibusdam, esse harum cupiditate impedit aliquam praesentium eos suscipit officiis nesciunt similique fuga velit doloribus magni deserunt perspiciatis debitis?</p>
+                <div class="btn-box">
+                    <a href="D:\resume (1).pdf" class="btn" download>Download Resume</a>
+                    <a href="#" class="btn contact-me" id="contactBtn">Contact Me</a>
+                    <a href="#" class="btn view-cert" id="certificationBtn">View Certification</a>
+                    <a href="#" class="btn view-pro" id="projectsBtn">View Projects</a>
+                </div>
+                <!-- Projects Modal -->
+        <div id="projectsModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeProBtn">&times;</span>
+                <h2>View Projects</h2>
+                <p><a href="https://github.com/yourusername/virtual-assistant" target="_blank">Virtual Assistant</a></p>
+                <p><a href="https://github.com/yourusername/portfolio" target="_blank">Portfolio</a></p>
+                <p><a href="https://github.com/yourusername/currency-calculator" target="_blank">Currency Calculator</a></p>
+                <p><a href="https://github.com/yourusername/fun-zone" target="_blank">Fun Zone</a></p>
+            </div>
+        </div>
+
+                <div id="contactModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeBtn">&times;</span>
+                        <h2>Contact Details</h2>
+                        <p>Email: kamal2255p@gmail.com</p>
+                        <p>Phone: +91 9025487338</p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/kamaleshwaran-p-b85938225" target="_blank">Kamaleshwaran</a></p>
+                    </div>
+                </div>
+                <div id="certificationModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeCertBtn">&times;</span>
+                        <h2>Certifications</h2>
+                        <p>Certification 1: <a href="certification1.pdf" target="_blank">View</a></p>
+                        <p>Certification 2: <a href="certification2.pdf" target="_blank">View</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="D:\portfolio\portfolio.js"></script>
+</body>
+</html>
